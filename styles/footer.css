@@ -1,5 +1,10 @@
+hr {
+    margin: 0;
+}
+
 .rodape {
     padding: 1em;
+    background-color: var(--white);
 }
 
 .rodape__alura {
