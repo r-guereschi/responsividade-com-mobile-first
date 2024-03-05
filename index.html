@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
@@ -90,7 +91,8 @@
                 <!-- 1 Coluna -->
                 <ul class="botoes">
                     <li class="botoes__item"><a href="#"><img src="assets/Favoritos.svg" alt="Favoritos"></a></li>
-                    <li class="botoes__item"><a href="#"><img src="assets/Sacola.svg" alt="Carrinho de compras"></a></li>
+                    <li class="botoes__item"><a href="#"><img src="assets/Sacola.svg" alt="Carrinho de compras"></a>
+                    </li>
                 </ul>
                 <!-- 2 Coluna -->
                 <a class="botoes__ancora" href="#">Saiba mais</a>
@@ -124,38 +126,81 @@
                     <div class="descrição">
                         <h3 class="descrição__titulo">Autora do Mês</h3>
                         <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
-                        <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                        <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em
+                            Front-End.</p>
                     </div>
                     <!-- 2 Coluna -->
                     <img class="descrição__imagem" src="assets/Perfil-escritora 1.svg" alt="Angular">
                 </div>
-    
+
                 <!-- 2 Linha -->
                 <div class="card__botoes">
                     <!-- 1 Coluna -->
                     <ul class="botoes">
                         <li class="botoes__item"><a href="#"><img src="assets/Favoritos.svg" alt="Favoritos"></a></li>
-                        <li class="botoes__item"><a href="#"><img src="assets/Sacola.svg" alt="Carrinho de compras"></a></li>
+                        <li class="botoes__item"><a href="#"><img src="assets/Sacola.svg" alt="Carrinho de compras"></a>
+                        </li>
                     </ul>
                     <!-- 2 Coluna -->
                     <a class="botoes__ancora" href="#">Saiba mais</a>
                 </div>
             </div>
 
-    </section>
+        </section>
 
+        <section class="topicos">
+            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Android</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Marketing Digital</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Agile</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Startups</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">HTML & CSS</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Python</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">OO</a>
+                </li>
+                <li class="topicos__item">
+                    <a class="topicos__link" href="#">Java</a>
+                </li>
+            </ul>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
-    </script>
+        <section class="contato">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input class="contato__email" type="email" name="email" id="email" placeholder="Cadastre seu e-mail">
+        </section>
+
+        <hr>
+
+        <footer class="rodape">
+            <h2><a class="rodape__alura" href="https://www.alura.com.br/" target="_blank">Grupo Alura</a></h2>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
 </body>
 
 </html>
