@@ -54,3 +54,47 @@
     text-decoration: none;
     color: #326589;
 }
+
+.titulo__alurabooks {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .titulo__alurabooks,
+    .titulo__alurabooks-negrito {
+        font-family: var(--font-josefin);
+        font-size: 30px;
+    }
+
+    .titulo__alurabooks {
+        font-weight: 300;
+        display: block;
+    }
+
+    .titulo__alurabooks-negrito {
+        font-weight: 700;
+    }
+
+    .nav {
+        display: flex;
+        gap: 2em;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .favoritos {
+        display: none;
+    }
+}
