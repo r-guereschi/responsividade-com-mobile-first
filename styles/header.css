@@ -7,6 +7,14 @@
     background-repeat: no-repeat;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--blue-gradient);
+}
+
 .cabecalho {
     background-color: var(--white);
     display: flex;
@@ -63,6 +71,14 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
+.icones {
+    margin-right: 1em;
+}
+
 @media screen and (min-width:1024px) {
 
     .titulo__alurabooks,
@@ -96,5 +112,59 @@
 
     .favoritos {
         display: none;
+    }
+
+    .nav__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .nav__botao {
+        display: none;
+    }
+
+    .nav__botao:checked~.nav__rotulo>.nav__item {
+        background: var(--blue-gradient);
+        color: var(--white);
+    }
+
+    .nav__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--blue-gradient);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--white);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        margin-right: 1em;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 20px;
+    }
+
+    .sacola,
+    .usuario {
+        margin: 0 1em;
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .nav {
+        margin: 0 auto 0 2em;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
